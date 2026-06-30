@@ -19,6 +19,15 @@ export default async function HomePage() {
     <div>
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-brand-600 to-brand-800 text-white overflow-hidden">
+        {/* Hero background image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://imgix.cosmicjs.com/83d55b90-74d5-11f1-a44c-d7f5892df684-autopilot-photo-1553062407-98eeb64c6a62-1782859581374.jpeg?w=1920&h=1080&fit=crop&auto=format,compress"
+            alt="Urban Travel Backpack"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-700/80 to-brand-900/80" />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
@@ -44,7 +53,7 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl z-10" />
       </section>
 
       {/* Featured Categories */}
